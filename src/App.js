@@ -4,6 +4,7 @@ import 'bootstrap/dist/css/bootstrap.min.css';
 import Card from '../src/componentes/Card'
 
 const App = () => { //Define el componente funcional App, que es el componente principal de la aplicación.
+  const parcelasID = [1,3,4]
   return (
     <div className="container">
       <header className="header">
@@ -58,6 +59,7 @@ const App = () => { //Define el componente funcional App, que es el componente p
           <p>lbalsblasblabsls</p>
         </div>
       </section>
+      <Card/>
     </div>
   );
 };
