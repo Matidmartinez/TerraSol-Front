@@ -1,5 +1,7 @@
 import React from 'react';
 import './App.css'; //Importa el archivo CSS específico para el componente App.
+import 'bootstrap/dist/css/bootstrap.min.css';
+import Card from '../src/componentes/Card'
 
 const App = () => { //Define el componente funcional App, que es el componente principal de la aplicación.
   return (
