@@ -1,0 +1,80 @@
+[
+    {
+      "id_parcela": "1",
+      "nombre_parcela": "ALTAVISTA FRUTILLAR",
+      "region_parcela": "REGIÓN DE LOS LAGOS",
+      "descripcion_parcela": "En uno de los lugares más reconocidos del sur chileno se encuentra Altavista Frutillar. En honor a su nombre, las parcelas se emplazan en un entorno espléndido con una maravillosa vista a volcanes y paisajes verdosos",
+      "metros_2": "5000",
+      "precios_desde": "23990000",
+      "precio_reserva": "400000",
+      "img_1": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar4.jpeg?alt=media&token=bb81acd1-9e3f-4ee2-8e0c-399a53f6c314",
+      "img_2": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar1.jpeg?alt=media&token=9a2499ff-b7db-4051-9248-5b817160fa55",
+      "img_3": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar2.jpeg?alt=media&token=6c65489d-7751-4b2f-ad0c-b413acaf9d80",
+      "img_4": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar3.jpeg?alt=media&token=8fc7d06f-e700-43a1-a477-1682a77d9553"
+    },
+    {
+      "id_parcela": "2",
+      "nombre_parcela": "VIVE OSORNO",
+      "region_parcela": "REGIÓN DE LOS LAGOS",
+      "descripcion_parcela": "Emplazadas en un majestuoso sector repleto de verdor, flora y fauna nativa, estas parcelas agrícolas poseen un encanto único, donde se refleja toda la belleza del sur de nuestro país. A solo 15 minutos del centro de Osorno.\r\n",
+      "metros_2": "5000",
+      "precios_desde": "25990000",
+      "precio_reserva": "400000",
+      "img_1": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/osorno1.jpg?alt=media&token=6fb05751-00f5-4ae7-91eb-ea9c5e587869",
+      "img_2": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/osorno2.jpg?alt=media&token=b95964ef-6cfc-4de9-a66b-49f703dda95b",
+      "img_3": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/osorno3.jpg?alt=media&token=d8d62d49-ef0f-48fe-b077-45087f27b469",
+      "img_4": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/osorno4.jpg?alt=media&token=6a7fbb84-36e4-48d4-9985-4497351000ac"
+    },
+    {
+      "id_parcela": "3",
+      "nombre_parcela": "VIVE RUPANCO",
+      "region_parcela": "REGIÓN DE LOS LAGOS",
+      "descripcion_parcela": "Descubre el encanto de Vive Rupanco, un refugio natural rodeado de exuberante flora nativa y acariciado por las aguas del Río Rahue. Con una ubicación estratégica y fácil acceso a otras comunas turísticas del Sur de Chile, este destino te invita a explorar senderos y conectar con la naturaleza.",
+      "metros_2": "5000",
+      "precios_desde": "24990000",
+      "precio_reserva": "500000",
+      "img_1": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco4.jpeg?alt=media&token=af7c64bd-997b-467f-add8-cb87b7680b83",
+      "img_2": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco1.jpeg?alt=media&token=893f7b48-73c2-4bd8-8610-f9e59e57b0ac",
+      "img_3": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco2.jpeg?alt=media&token=3ad2e846-cedc-45d3-9eac-b04d67ce4651",
+      "img_4": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco3.jpeg?alt=media&token=a9c946c3-dd64-4df7-966a-65f051033948"
+    },
+    {
+      "id_parcela": "4",
+      "nombre_parcela": "BOSQUES DE FRUTILLAR",
+      "region_parcela": "REGIÓN DE LOS LAGOS",
+      "descripcion_parcela": "Bosques de Frutillar posee parcelas a orilla de río, terrenos planos, lomajes suaves y abundantes áreas verdes, hacen que tu espacio sea soñado. Además, posee una excelente conectividad con la ciudad, carretera, servicios básicos, atractivos turísticos, entre muchos otros.\r\n",
+      "metros_2": "5000",
+      "precios_desde": "15990000",
+      "precio_reserva": "350000",
+      "img_1": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar-bosque1.jpeg?alt=media&token=784fe010-b6ae-48c9-9c35-fc7dedeccc66",
+      "img_2": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar-bosque2.jpeg?alt=media&token=e314ca91-8094-4202-8220-2c1d11dfe559",
+      "img_3": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar-bosque3.jpeg?alt=media&token=35b4611b-6c9d-4ba7-8954-8e0d9c10956d",
+      "img_4": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/frutillar-bosque4.jpeg?alt=media&token=726da713-8110-4bfe-b533-ee33df187cd5"
+    },
+    {
+      "id_parcela": "5",
+      "nombre_parcela": "VIVE PURRANQUE",
+      "region_parcela": "REGIÓN DE LOS LAGOS",
+      "descripcion_parcela": "Un tesoro natural enclavado en la acogedora comuna del mismo nombre. Aquí, entre hermosos paisajes y una rica historia, encontrarás las parcelas que estás buscando. Sumérgete en la autenticidad de Purranque, con su destacada tradición agrícola y su cálida comunidad.",
+      "metros_2": "5000",
+      "precios_desde": "16990000",
+      "precio_reserva": "400000",
+      "img_1": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco1.jpeg?alt=media&token=893f7b48-73c2-4bd8-8610-f9e59e57b0ac",
+      "img_2": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco2.jpeg?alt=media&token=3ad2e846-cedc-45d3-9eac-b04d67ce4651",
+      "img_3": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco3.jpeg?alt=media&token=a9c946c3-dd64-4df7-966a-65f051033948",
+      "img_4": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/Rupanco4.jpeg?alt=media&token=af7c64bd-997b-467f-add8-cb87b7680b83"
+    },
+    {
+      "id_parcela": "6",
+      "nombre_parcela": "DUAO MIRAMAR",
+      "region_parcela": "REGIÓN DEL MAULE",
+      "descripcion_parcela": "[Ubicado a solo 3 minutos de Pichibudi, estas parcelas agrícolas te brindarán una vista única al mar. Planicies y lomas suaves donde el aire fresco y el clima costero te cautivarán. ¿Y lo mejor? a pocos minutos de las mejores playas de la región del Maule.",
+      "metros_2": "5000",
+      "precios_desde": "19990000",
+      "precio_reserva": "350000",
+      "img_1": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/miramar1.jpeg?alt=media&token=fde626c7-dbcb-4123-921a-1890489ebab7",
+      "img_2": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/miramar2.jpeg?alt=media&token=61e7e724-7d56-47a9-88de-5f2e06001646",
+      "img_3": "[https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/miramar3.jpeg?alt=media&token=1204d704-0d8e-436a-8873-4d5f5560d72f",
+      "img_4": "https://firebasestorage.googleapis.com/v0/b/terrasol-1e0a3.appspot.com/o/miramar4.jpeg?alt=media&token=d4609007-e5ca-476f-bee4-3592987c1635"
+    }
+  ]

@@ -8,7 +8,6 @@ import {FAQ} from './pages/FAQ'
 import {Contact} from './pages/Contact'
 import {Footer} from './componentes/Footer'
 
-
 // Componente principal App
 const App = () => {
   return (
