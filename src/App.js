@@ -8,18 +8,6 @@ import {FAQ} from './pages/FAQ'
 import {Contact} from './pages/Contact'
 import {Footer} from './componentes/Footer'
 
-// Componentes para las secciones de la aplicación
-
-
-// Componente Title
-const Title = ({ text }) => {
-  return (
-    <div className="title">
-      <h2>{text}</h2>
-    </div>
-  );
-};
-
 
 // Componente principal App
 const App = () => {
