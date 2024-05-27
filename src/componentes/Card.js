@@ -22,12 +22,3 @@ function Card() {
 }
 
 export default Card;
-
-{/* <div className="card" style={{ width: "18rem" }}>
-                    
-                    <div className="card-body">
-                        <h5 className="card-title">{eachCard.nombre_parcela}</h5>
-                        <p style={{height:'25vh'}} className="card-text">{eachCard.descripcion_parcela}</p>
-                        <p>Insertar boton</p>
-                    </div>
-                </div> */}
