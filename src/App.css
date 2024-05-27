@@ -1,108 +1,145 @@
 .container {
-  max-width: 1200px;
+  width: 100%;
   margin: 0 auto;
-  padding: 20px;
 }
 
 .header {
-  background-color: #333;
-  color: #fff;
-  padding: 10px;
   display: flex;
   justify-content: space-between;
   align-items: center;
+  padding: 0px;
+  background-color: #333;
 }
 
-.logo {
-  margin-right: 20px;
+.logo img {
+  width: 100px;
 }
 
 .navigation ul {
   list-style: none;
+  display: flex;
   margin: 0;
   padding: 0;
-  display: flex;
-  justify-content: space-between;
 }
 
 .navigation li {
-  margin-right: 20px;
+  margin: 0 15px;
 }
 
 .navigation a {
-  color: #fff;
+  color: #ffff;
   text-decoration: none;
+  font-weight: bold;
+}
+
+.navigation a:hover {
+  text-decoration:none;
+  color: #939C20;
+}
+.navigation .active {
+  color: #939C20; /* Color para el enlace activo */
 }
 
 .hero {
-  background-image: url('https://i.imgur.com/w67fQ4Y.jpg');
-  background-size: cover;
-  height: 500px;
-  display: flex;
-  justify-content: center;
-  align-items: center;
+  position: relative;
+  text-align: center;
+  color: white;
+}
+
+.hero img {
+  width: 100%;
+  height: auto;
 }
 
 .hero-content {
-  text-align: center;
-  color: #fff;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
 }
 
 .hero-content h1 {
-  font-size: 36px;
-  margin-bottom: 10px;
-}
-
-.hero-content p {
-  font-size: 18px;
-  margin-bottom: 20px;
+  font-size: 3em;
 }
 
 .hero-content button {
-  background-color: #333;
-  color: #fff;
-  border: none;
   padding: 10px 20px;
-  font-size: 18px;
+  font-size: 1em;
+  margin-top: 20px;
+  background-color: #007bff;
+  color: white;
+  border: none;
   cursor: pointer;
 }
 
-.features {
+.features, .testimonials {
+  padding: 20px;
+}
+
+.features .feature, .testimonials .testimonial {
+  margin-bottom: 20px;
+}
+
+.features .feature h2, .testimonials .testimonial h2 {
+  margin-bottom: 10px;
+}
+
+.footer {
+  background-color: #333;
+  color: #fff;
+  text-align: center;
+  padding: 20px 0;
+}
+
+.footer-logo img {
+  max-width: 150px;
+  margin-bottom: 10px;
+}
+
+.footer-address,
+.footer-contact {
+  margin: 5px 0;
+}
+
+.footer-contact .whatsapp-icon {
+  
+  background-size: contain;
+  display: inline-block;
+  width: 20px;
+  height: 20px;
+  margin-right: 5px;
+}
+
+/* Agrega estilos para los componentes tipo card y review */
+
+.parcela-cards {
   display: flex;
-  flex-wrap: wrap;
-  justify-content: center;
+  justify-content: space-around;
+  padding: 20px;
 }
 
-.feature {
-  margin: 20px;
-  width: 300px;
-  background-color: #fff;
-  padding: 20px;
+.card {
+  background: #fff;
   border: 1px solid #ddd;
-  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
-}
-
-.feature h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
-}
-
-.feature p {
-  font-size: 18px;
-  margin-bottom: 20px;
-}
-
-.testimonials {
-  background-color: #f7f7f7;
+  border-radius: 5px;
+  width: 30%;
+  text-align: center;
   padding: 20px;
 }
 
-.testimonials h2 {
-  font-size: 24px;
-  margin-bottom: 10px;
+.card h3 {
+  margin-top: 0;
 }
 
-.testimonial {
+.reviews {
+  padding: 20px;
+  background: #f9f9f9;
+}
+
+.review {
+  background: #fff;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  padding: 20px;
   margin-bottom: 20px;
-  padding: 20
 }
