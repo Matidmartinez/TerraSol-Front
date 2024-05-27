@@ -2,38 +2,10 @@ import React from 'react';
 import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
 import './App.css';
 import {Home} from './pages/Home';
+import {Parcels} from './pages/Parcels';
 
 // Componentes para las secciones de la aplicación
 
-//const Home = () => (
-//  <section className="hero">
-//    <img src="https://i.imgur.com/w67fQ4Y.jpg" alt="Hero" />
-//   <div className="hero-content">
-//      <h1>Conoce la parcela de tus sueños</h1>
-//      <p>Cotizar</p>
-//      <button>CONOCE NUESTRAS NUEVAS PARCELAS</button>
-//    </div>
-//    <Title text="CONOCE NUESTRAS PARCELAS" />
-//    <div className="parcela-cards">
-//      {/* Aquí agregarás los 3 componentes tipo card */}
-//      <Card title="Puerto Varas" region="Región de Los Lagos" />
-//      <Card title="Duo Puerto Varas" region="Región de Los Lagos" />
-//      <Card title="Puerto Varas" region="Región de Los Lagos" />
-//    </div>
-//    <Title text="RESEÑAS" />
-//    <div className="reviews">
-//      {/* Aquí agregarás el carrusel con tres testimonios */}
-//      <Review testimonial="Testimonio 1" author="Autor 1" />
-//    </div>
-//  </section>
-//);
-
-const Parcelas = () => (
-  <section>
-    <Title text="Parcelas" />
-    <p>Contenido de Parcelas.</p>
-  </section>
-);
 
 const Nosotros = () => (
   <section>
@@ -136,7 +108,7 @@ const App = () => {
         <main>
           <Routes>
             <Route exact path="/" element={<Home />} />
-            <Route path="/parcelas" element={<Parcelas />} />
+            <Route path="/parcelas" element={<Parcels />} />
             <Route path="/nosotros" element={<Nosotros />} />
             <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
             <Route path="/contacto" element={<Contacto />} />
