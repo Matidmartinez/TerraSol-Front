@@ -3,30 +3,12 @@ import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-do
 import './App.css';
 import {Home} from './pages/Home';
 import {Parcels} from './pages/Parcels';
+import {About} from './pages/About';
+import {FAQ} from './pages/FAQ'
+import {Contact} from './pages/Contact'
 
 // Componentes para las secciones de la aplicación
 
-
-const Nosotros = () => (
-  <section>
-    <Title text="Nosotros" />
-    <p>Contenido de Nosotros.</p>
-  </section>
-);
-
-const PreguntasFrecuentes = () => (
-  <section>
-    <Title text="Preguntas Frecuentes" />
-    <p>Contenido de Preguntas Frecuentes.</p>
-  </section>
-);
-
-const Contacto = () => (
-  <section>
-    <Title text="Contáctenos" />
-    <p>Contenido de Contacto.</p>
-  </section>
-);
 
 // Componente Title
 const Title = ({ text }) => {
@@ -37,25 +19,6 @@ const Title = ({ text }) => {
   );
 };
 
-// Componente Card (placeholder)
-const Card = ({ title, region }) => {
-  return (
-    <div className="card">
-      <h3>{title}</h3>
-      <p>{region}</p>
-    </div>
-  );
-};
-
-// Componente Review (placeholder)
-const Review = ({ testimonial, author }) => {
-  return (
-    <div className="review">
-      <p>{testimonial}</p>
-      <p><strong>{author}</strong></p>
-    </div>
-  );
-};
 
 // Componente Footer
 const Footer = () => {
@@ -109,9 +72,9 @@ const App = () => {
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/parcelas" element={<Parcels />} />
-            <Route path="/nosotros" element={<Nosotros />} />
-            <Route path="/preguntas-frecuentes" element={<PreguntasFrecuentes />} />
-            <Route path="/contacto" element={<Contacto />} />
+            <Route path="/nosotros" element={<About />} />
+            <Route path="/preguntas-frecuentes" element={<FAQ />} />
+            <Route path="/contacto" element={<Contact />} />
           </Routes>
         </main>
         <Footer />
