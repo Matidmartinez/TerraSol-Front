@@ -7,6 +7,7 @@ import {About} from './pages/About';
 import {FAQ} from './pages/FAQ'
 import {Contact} from './pages/Contact'
 import {Footer} from './componentes/Footer'
+import logo from './assets/logo.png'
 
 // Componente principal App
 const App = () => {
@@ -15,7 +16,7 @@ const App = () => {
       <div className="container">
         <header className="header">
           <div className="logo">
-            <img src="https://i.imgur.com/6sT02j6.png" alt="Logo" />
+            <img src={logo} alt="Logo" />
           </div>
           <nav className="navigation">
             <ul>
