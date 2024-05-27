@@ -1,15 +1,20 @@
 import React from 'react';
 
+<<<<<<< HEAD
 export function Card() {
+=======
+export function Card({titulo,descripcion}) {
+>>>>>>> 2efb939417b341de17bb242a47ddbe2d1364bc02
     return (
-        <div className="card" style={{ width: "18rem" }}>
-            <img src={require("../images/sample.jpg")} className="card-img-top" alt="..." />
-            <div className="card-body">
-                <h5 className="card-title">Nombre-Parcela</h5>
-                <p className="card-text">Descripcion-Parcela</p>
-                <p>Insertar boton</p>
-            </div>
+        <div>
+          <h1>{titulo}</h1>
+            <p>{descripcion}</p>
         </div>
+<<<<<<< HEAD
     );
 }
 
+=======
+    )
+}
+>>>>>>> 2efb939417b341de17bb242a47ddbe2d1364bc02

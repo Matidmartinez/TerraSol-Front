@@ -40,50 +40,6 @@
   color: #939C20; /* Color para el enlace activo */
 }
 
-.hero {
-  position: relative;
-  text-align: center;
-  color: white;
-}
-
-.hero img {
-  width: 100%;
-  height: auto;
-}
-
-.hero-content {
-  position: absolute;
-  top: 50%;
-  left: 50%;
-  transform: translate(-50%, -50%);
-}
-
-.hero-content h1 {
-  font-size: 3em;
-}
-
-.hero-content button {
-  padding: 10px 20px;
-  font-size: 1em;
-  margin-top: 20px;
-  background-color: #007bff;
-  color: white;
-  border: none;
-  cursor: pointer;
-}
-
-.features, .testimonials {
-  padding: 20px;
-}
-
-.features .feature, .testimonials .testimonial {
-  margin-bottom: 20px;
-}
-
-.features .feature h2, .testimonials .testimonial h2 {
-  margin-bottom: 10px;
-}
-
 .footer {
   background-color: #333;
   color: #fff;
@@ -110,36 +66,55 @@
   margin-right: 5px;
 }
 
-/* Agrega estilos para los componentes tipo card y review */
-
-.parcela-cards {
-  display: flex;
-  justify-content: space-around;
-  padding: 20px;
+/* Card */
+.card-parcelas {
+  position: relative;
+  width: 18rem;
+  height: 18rem;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  background-color: #ffffff;
+  transition: background-color 0.5s ease;
 }
-
-.card {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  width: 30%;
+.card-img{
+  width: 100%;
+  height: 100%;
+}
+.card-body {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  opacity: 1;
+  transition: opacity 0.5s ease;
   text-align: center;
-  padding: 20px;
 }
 
-.card h3 {
-  margin-top: 0;
+.card-description {
+  position: absolute;
+  bottom: 0;
+  left: 50%;
+  transform: translate(-50%, 100%); 
+  opacity: 0; 
+  transition: opacity 0.5s ease, transform 0.5s ease; 
+  text-align: center;
+  color: white; 
+  width: 90%; 
+  height: 90%; 
+  overflow: auto; 
+}
+.card-parcelas:hover {
+  background-color: #020202;
 }
 
-.reviews {
-  padding: 20px;
-  background: #f9f9f9;
+.card-parcelas:hover .card-img,
+.card-parcelas:hover .card-body {
+  opacity: 0;
 }
 
-.review {
-  background: #fff;
-  border: 1px solid #ddd;
-  border-radius: 5px;
-  padding: 20px;
-  margin-bottom: 20px;
+
+.card-parcelas:hover .card-description {
+  opacity: 1;
+  transform: translate(-50%, 0);
 }
