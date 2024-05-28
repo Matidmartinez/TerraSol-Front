@@ -1,10 +1,11 @@
 import React from 'react'
+import logo from '../assets/logo.png'
 
 export const Footer = () => {
   return (
     <footer className="footer">
     <div className="footer-logo">
-      <img src="https://i.imgur.com/6sT02j6.png" alt="Terrasol Logo" />
+    <img src={logo} alt="Logo" />
     </div>
     <div className="footer-address">
       Dirección: Entre Talca y la Región de Los Lagos
