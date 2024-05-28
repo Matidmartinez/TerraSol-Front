@@ -1,5 +1,6 @@
 import React from 'react'
 import logo from '../assets/logo.png'
+import logofb from '../assets/Facebook icon.png'
 
 export const Footer = () => {
   return (
@@ -14,6 +15,10 @@ export const Footer = () => {
       <a href="https://wa.me/56950186583" target="_blank" rel="noopener noreferrer">
         <a></a> +56 9 50186583
       </a>
+    </div>
+    <div className="fb-logo-footer">
+    <img src={logofb} alt="Logofb" />
+
     </div>
   </footer>
   )
