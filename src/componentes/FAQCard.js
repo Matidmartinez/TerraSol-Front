@@ -1,17 +1,17 @@
-import React from 'react'
 import '../styles/FAQCard.css'
 import {ReactComponent as CircleButton} from '../assets/plus-button.svg'
 
-export const FAQCard = ({id, question, answer}) => {
+export const FAQCard = ({ qa, selected, toggle }) => {
+
     return (
-        <div className='FAQCardContainer' key={id}>
-            <div className='questionContainer'>
-                <h3 className='question'>{question}</h3>
-                <CircleButton className='circleButton'/>
-            </div>
-            <div className='answerContainer'>
-                <p className='answer'>{answer}</p>
-            </div>
+        <div className='FAQCardContainer' key={qa.id}>
+        <div className='questionContainer' onClick={() => toggle(qa.id)}>
+            <h3 className='question'>{qa.question}</h3>
+            <CircleButton className='circleButton' />
         </div>
+        <div className={selected === qa.id ? 'answerContainer show' : 'answerContainer'}>
+            <p className='answer'>{qa.answer}</p>
+        </div>
+    </div>
     )
 }

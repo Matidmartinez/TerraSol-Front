@@ -14,6 +14,7 @@
     max-height: 4vh;
     background-color: #000000;
     padding: 8px 12px 8px 12px;
+    cursor: pointer;
 }
 
 .question { 
@@ -31,10 +32,18 @@
 
 .answerContainer { 
     background-color: #F1F1F1;
-    padding: 0px 12px;
+    padding: 0 12px;
+    max-height: 0;
+    transition: all 0.5 cubic-bezier(1, 0, 0.1, 0);
 }
 
 .answer {
     font-size: 20px;
     font-weight: 500;
+}
+
+.answerContainer.show { 
+    height: auto;
+    max-height: 999px;
+    transition: all 0.5 cubic-bezier(1, 0, 0.1, 0);
 }
