@@ -5,8 +5,13 @@ import '../styles/FAQ.css'
 export const FAQ = () => {
     const [selected, setSelected] = useState(null);
 
+    /**
+     * La función toggle recibe un parámetro id, que es el identificador único de la pregunta a la cual se le ha hecho clic.
+     * @param {*} id 
+     */
     const toggle = (id) => {
-        setSelected(selected === id ? null : id);
+        //setSelected cambia el estado de selected a null si selected contiene un id. De lo contrario, si selected contiene un id, lo cambia a null
+        setSelected(selected === id ? null : id); 
     };
 
     return (

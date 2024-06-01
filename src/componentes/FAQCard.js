@@ -8,7 +8,7 @@ export const FAQCard = ({ qa, selected, toggle }) => {
         <div className='FAQCardContainer' key={qa.id}>
         <div className='questionContainer' onClick={() => toggle(qa.id)}>
             <h3 className='question'>{qa.question}</h3>
-            {selected === qa.id ? (
+            {selected === qa.id ? ( //Si selected tiene el id de la tarjeta se mestra el botón menos, sino el mas
                     <CircleButtonMinus className='circleButton' />
                 ) : (
                     <CircleButtonPlus className='circleButton' />
