@@ -1,6 +1,5 @@
 import { Card } from '../componentes/Card'
 import '../styles/Card.css'
-import '../styles/Review.css'
 
 //Llamando a la API y guardando los datos en u arreglo, los 3 primeros.
 let cards = [];
