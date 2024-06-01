@@ -1,0 +1,45 @@
+.FAQCardContainer { 
+    display: flex;
+    flex-direction: column;
+    max-width: 80%;
+    gap: 0;
+}
+
+.questionContainer { 
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    max-height: 4vh;
+    background-color: #000000;
+    padding: 8px 12px;
+    cursor: pointer;
+}
+
+.question { 
+    font-size: 24px;
+    color: #FFFFFF;
+    font-weight: bold;
+}
+
+.circleButton { 
+    min-width: 32px;
+    min-width: 32px;
+}
+
+/*Cuando el estado es nulo el max-weight es de cero y el overflow está oculto, por lo tanto, la respuesta no se ve */
+.answerContainer { 
+    background-color: #F1F1F1;
+    font-size: 20px;
+    font-weight: 500;
+    padding: 0 12px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-out;
+}
+
+/*Cuando se cambia el estado se agrega la clase show para generar la transición y mostrar la respuesta */
+.answerContainer.show { 
+    height: auto;
+    max-height: 999px;
+    transition: all 0.7s cubic-bezier(0.455, 0.03, 0.515, 0.955);
+}
