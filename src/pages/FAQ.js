@@ -1,5 +1,6 @@
 import React from 'react'
 import { FAQCard } from '../componentes/FAQCard'
+import '../styles/FAQ.css'
 
 const QAs = [
   {
@@ -50,10 +51,10 @@ export const FAQ = () => {
     <main>
         <h1>Preguntas frecuentes</h1>
         
-        <section>
+        <section className='FAQSection'>
           {
             QAs.map((qa) => (
-              <FAQCard id={qa.id} question={qa.question} answer={qa.answer}/>
+              <FAQCard id={qa.id} question={qa.question} answer={qa.answer} />
             ))
           }
         </section>
