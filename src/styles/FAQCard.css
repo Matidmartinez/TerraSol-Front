@@ -1,9 +1,7 @@
 .FAQCardContainer { 
     display: flex;
     flex-direction: column;
-    flex-wrap: wrap;
     max-width: 80%;
-    overflow: hidden;
     gap: 0;
 }
 
@@ -13,14 +11,12 @@
     align-items: center;
     max-height: 4vh;
     background-color: #000000;
-    padding: 8px 12px 8px 12px;
+    padding: 8px 12px;
     cursor: pointer;
 }
 
 .question { 
     font-size: 24px;
-    text-wrap: wrap;
-    background-color: #000000;
     color: #FFFFFF;
     font-weight: bold;
 }
@@ -32,18 +28,16 @@
 
 .answerContainer { 
     background-color: #F1F1F1;
-    padding: 0 12px;
-    max-height: 0;
-    transition: all 0.5 cubic-bezier(1, 0, 0.1, 0);
-}
-
-.answer {
     font-size: 20px;
     font-weight: 500;
+    padding: 0 12px;
+    overflow: hidden;
+    max-height: 0;
+    transition: all 0.3s ease-out;
 }
 
 .answerContainer.show { 
     height: auto;
     max-height: 999px;
-    transition: all 0.5 cubic-bezier(1, 0, 0.1, 0);
+    transition: all 0.5s ease-in;
 }
