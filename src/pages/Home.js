@@ -1,18 +1,27 @@
-import React from 'react'
-import {Card} from '../componentes/Card'
-import db from '../db.json';
+import { Card } from '../componentes/Card'
 
+//Llamando a la API y guardando los datos en u arreglo, los 3 primeros.
+let cards = [];
+fetch('http://localhost/terrasol-backend/controller/ParcelController.php')
+  .then((reponse) => reponse.json())
+  .then((data) => {
+    cards = data.slice(0, 3);
+    console.log(cards);
+  })
+  .catch((err) => {
+    console.log(err.message);
+  });
+  
 export const Home = () => {
-  const cardArr = db;
   return (
     <>
       <section className="hero">
         {
-          db.map((cardInfo)=>(
+          cards.map((card) => (
             <Card
-            titulo={cardInfo.nombre_parcela}
-            descripcion={cardInfo.descripcion_parcela}
-            
+              titulo={card.nombre_parcela}
+              descripcion={card.descripcion_parcela}
+
             />
           ))
         }
