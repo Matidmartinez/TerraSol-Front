@@ -1,10 +1,14 @@
 import React from 'react'
+import { FAQCard } from '../componentes/FAQCard'
 
 export const FAQ = () => {
   return (
-    <>
+    <main>
         <h1>Preguntas frecuentes</h1>
-        <h3>Página en la cual se deben mostrar las preguntas frecuentes</h3>
-    </>
+        
+        <section>
+          <FAQCard />
+        </section>
+    </main>
   )
 }
