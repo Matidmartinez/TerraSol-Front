@@ -1,0 +1,22 @@
+{
+    "slides": [
+      {
+        "src": "https://www.eluniverso.com/resizer/KOiq6DcHPJmNXZkycwh-4T00wTI=/1000x666/smart/filters:quality(70)/cloudfront-us-east-1.images.arcpublishing.com/eluniverso/NGHTNFSJGZBL3OTXMRL7I43NQI.jpg",
+        "alt": "Image 1 for carousel",
+        "user": "Sandra Echeverría" ,
+        "description": "Después de mucho buscar, finalmente encontramos la parcela perfecta para construir mi nuestro pedazo de cielo. Estoy emocionada por enseñar a mis hijos el estilo de vida que siempre les quise dar y nunca tuve la oportunidad de lograr. Gracias infinitas a ustedes."
+      },
+      {
+        "src": "https://img.freepik.com/fotos-premium/vista-trasera-hombre-adulto-mayor-brazos-abiertos-frente-al-oceano-azul-paisaje-marino-montana-e-isla-feliz-concepto-jubilacion-activa_465191-3384.jpg",
+        "alt": "Image 2 for carousel",
+        "user": "Fernando Mallorca",
+        "description": "Recién jubilado, adquirí una parcela en el interior de Frutillar para construir mi casa de retiro. Estoy emocionado por diseñar un espacio que refleje quién soy y poder disfrutar de la tranquilidad y la serenidad que sólo el sur de Chile me puede ofrecer"
+      },
+      {
+        "src": "https://img.freepik.com/fotos-premium/perro-adulto-paseando-solo-paisaje-tierra-zonas-verdes_136753-1486.jpg",
+        "alt": "Image 3 for carousel",
+        "user": "Almendra Castro",
+        "description": "Como todo buen chileno, nuestra máxima de vida es escapar de Santiago y gracias a Terrasol hoy puedo decir que lo logré, estoy en una tierra espectacular, rodeado de vida y naturaleza, no puedo estar más feliz."
+      }
+    ]
+  }
