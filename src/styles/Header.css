@@ -1,5 +1,5 @@
 .HeaderSection {
-    background-image: url('../assets/Fondo-home.jpg');
+    background-image: url('../assets/fondo-home.jpg');
     background-repeat: round;
     background-attachment: fixed;
     background-size: auto;
@@ -8,11 +8,11 @@
     display: flex;
     justify-content: center;
     align-items: center;
+    flex-direction: column;
 }
 
 .titulo-header{
     color: #ffff;
     font-size: 40px;
-    text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);
-    
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);   
 }
