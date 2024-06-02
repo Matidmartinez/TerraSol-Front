@@ -1,6 +1,6 @@
-.HomeSection{
+.NewParcel{
     display: flex;
-    flex-direction: row;
+    flex-direction: column;
     justify-content: center;
     align-content: center;
 }
@@ -8,9 +8,9 @@
 .cardContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
+    gap: 30px; 
     padding: 20px;
-    width: 80%;
+    width: 100%;
     box-sizing: border-box;
     align-content: center;
     justify-content: center;
@@ -19,28 +19,38 @@
 .box {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
-    min-width: 80%;
     justify-content: center;
+    align-items: center;
 
 }
 
 .card {
+    display: flex;
+    justify-content: center;
+    min-width: 300px;
+    max-width: 300px;
     position: relative;
 }
 
 .image {
-    width: 100%;
+
+    display: flex;
+    justify-content: center;
+    align-content: center;
+    min-width: 300px;
+    max-width: 300px;
     height: 450px;
     overflow: hidden;
+    
 }
 
 .image img {
-    position: absolute;
+    min-width: 300px;
     top: 0;
     left: 0;
     width: 100%;
     height: 100%;
+    border-radius: 10px;
     object-fit: cover;
     transition: opacity 0.3s ease-in-out;
 }
@@ -55,7 +65,7 @@
     text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.6);
     text-align: center;
     z-index: 10;
-    width: 100%;
+    max-width: 300px;
     padding: 0 10px;
     box-sizing: border-box;
     opacity: 1;
@@ -71,13 +81,15 @@
     position: absolute;
     top: 0;
     left: 0;
-    width: 100%;
-    height: 100%;
+    min-width: 300px;
+    max-width: 300px;   
+    height: 450px;
     background: #000000;
     display: flex;
     flex-direction: column;
     align-items: center;
     justify-content: center;
+    border-radius: 10px;
     opacity: 0;
     transition: opacity 0.3s ease-in-out;
     color: white;
@@ -85,8 +97,9 @@
     z-index: 15;
 }
 
-.overlay h1 {
+.overlay h1 p{
     margin-bottom: 10px;
+    text-align: justify;
 }
 
 .card:hover .image {
@@ -103,7 +116,7 @@
 
 @media (max-width: 1200px) {
     .cardContainer {
-        grid-template-columns: repeat(3, 1fr); /* 2 columnas en pantallas más pequeñas */
+        grid-template-columns: 1fr; /* 2 columnas en pantallas más pequeñas */
     }
 }
 
