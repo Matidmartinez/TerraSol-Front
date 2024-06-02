@@ -1,5 +1,8 @@
 import { Card } from '../componentes/Card'
+import { Carousel } from '../componentes/Carousel'
 import '../styles/Card.css'
+import '../styles/Carousel.css'
+import reviewData from '../data/reviewData.json';
 
 //Llamando a la API y guardando los datos en u arreglo, los 3 primeros.
 let cards = [];
@@ -16,7 +19,7 @@ fetch('http://localhost/terrasol-backend/controller/ParcelController.php')
 export const Home = () => {
   return (
     <>
-      <section className="home-card">
+      <section className="HomeSection">
         <div className='cardContainer'>
           {
             cards.map((card) => (
@@ -31,6 +34,10 @@ export const Home = () => {
           }
         </div>
       </section>
+      <h1>Reseñas</h1>
+      <div className='carouselSection'>
+        <Carousel data = {reviewData.slides}/>
+      </div>
     </>
   )
 }

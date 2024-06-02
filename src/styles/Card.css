@@ -1,15 +1,28 @@
+.HomeSection{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+    align-content: center;
+}
+
 .cardContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
     gap: 20px; 
     padding: 20px;
-    width: 100%;
+    width: 80%;
     box-sizing: border-box;
+    align-content: center;
+    justify-content: center;
 }
 
 .box {
     display: flex;
     flex-direction: column;
+    max-width: 80%;
+    min-width: 80%;
+    justify-content: center;
+
 }
 
 .card {
