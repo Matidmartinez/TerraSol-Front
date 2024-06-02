@@ -1,0 +1,152 @@
+
+.contact-tittle {
+  display: flex;
+  flex-direction: column;
+  gap: 0;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 20px;
+}
+
+.contact-tittle p {
+  font-size: 20px;
+  max-width: 800px;
+  margin: 0 auto 20px;
+}
+
+.contact-escribenos {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  max-width: 1200px;
+  margin: 0 auto;
+  padding: 20px;
+  box-sizing: border-box;
+  flex-direction: row;
+}
+
+.escribenos-imagen, .escribenos-formulario {
+  height: 100%;
+  box-sizing: border-box;
+}
+
+.escribenos-imagen {
+  flex: 2;
+  display: flex;
+  justify-content: initial;
+  align-items: initial;
+  padding: 20px;
+  height: 100%;
+  width: 100%;
+}
+
+.escribenos-imagen img {
+  max-width: 100%;
+  height: auto;
+  border-radius: 15px;
+}
+
+.escribenos-formulario {
+  flex: 1;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  padding: 20px;
+}
+
+.Formulario {
+  display: flex;
+  flex-direction: column;
+  background-color: #343434;
+  border-radius: 15px;
+  box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
+  padding: 20px;
+  width: 100%;
+  max-width: 400px;
+  text-align: center;
+  color: white;
+}
+
+fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+.Formulario label {
+  font-size: 15px;
+  display: block;
+  margin-top: 8px;
+  margin-bottom: 5px;
+  text-align: left;
+  color: white;
+}
+
+.Formulario input,
+.Formulario textarea {
+  margin-bottom: 10px;
+  width: 100%;
+  box-sizing: border-box;
+}
+
+.Formulario input {
+  height: 40px;
+  padding: 5px;
+}
+
+.Formulario textarea {
+  min-height: 150px;
+  max-height: 200px;
+  resize: vertical;
+  padding: 5px;
+}
+
+button {
+  background-color: #5cb85c;
+  color: white;
+  border: none;
+  padding: 10px;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:hover {
+  background-color: #4cae4c;
+}
+
+ /* Dispositivos Medianos*/
+@media (max-width: 768px) {
+    .contact-escribenos {
+      flex-direction: column;
+    }
+  
+    .escribenos-imagen, .escribenos-formulario {
+      padding: 10px;
+    }
+  
+    .Formulario {
+      max-width: 100%;
+    }
+  }
+  
+  /* Dispositivos pequeños*/
+  @media (max-width: 480px) {
+    .contact-tittle p {
+      font-size: 16px;
+    }
+  
+    .Formulario input {
+      height: 35px;
+    }
+  
+    .Formulario textarea {
+      min-height: 100px;
+      max-height: 150px;
+    }
+  
+    button {
+      padding: 8px;
+    }
+  }
