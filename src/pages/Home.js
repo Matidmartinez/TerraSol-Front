@@ -1,7 +1,7 @@
-import { Card } from '../componentes/Card'
-import { Carousel } from '../componentes/Carousel'
-import { Title } from '../componentes/Title'
-import { Header } from '../componentes/Header'
+import { Card } from '../componentes/Card';
+import { Carousel } from '../componentes/Carousel';
+import { Title } from '../componentes/Title';
+import { Header } from '../componentes/Header';
 import '../styles/Card.css'
 import '../styles/Carousel.css'
 import '../styles/Header.css'
@@ -24,7 +24,7 @@ export const Home = () => {
     <>
       <section className="HeaderSection">
         <Header 
-          text = 'Ven y descrube la parcela de tus sueños'
+          text = 'Ven y descubre la parcela de tus sueños'
         />
       </section>
 
