@@ -1,5 +1,6 @@
 import { Card } from '../componentes/Card'
 import { Carousel } from '../componentes/Carousel'
+import { Title } from '../componentes/Title'
 import '../styles/Card.css'
 import '../styles/Carousel.css'
 import reviewData from '../data/reviewData.json';
@@ -19,7 +20,13 @@ fetch('http://localhost/terrasol-backend/controller/ParcelController.php')
 export const Home = () => {
   return (
     <>
-      <section className="HomeSection">
+      <section className="HeaderSection">
+      </section>
+        
+      <section className="NewParcel">
+      <Title 
+          text = 'Conoce nuestras nuevas parcelas'
+        />
         <div className='cardContainer'>
           {
             cards.map((card) => (

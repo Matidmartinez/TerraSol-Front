@@ -1,21 +1,37 @@
 .text-about {
-    text-align: justify;
-    padding: 50px 20px;
-    font-family: Arial, Helvetica, sans-serif;
-    color: #000; 
-  }
+  display:flex;
+  flex-direction: column;
+  text-align:center;
+  text-wrap: wrap;
+  gap: 0;
+  max-width: 800px;
+  font-family: Arial, Helvetica, sans-serif;
+  color: #000;
+}
 
-  .text-about h3 {
-    font-size: 1.2em;
-    font-weight: 200;
-    line-height: 1.6;
-    max-width: 800px;
-    margin: 0 auto;
-  }
+.text-about p {
+  font-size: 20px;
+  max-width: 800px;
+  top: -100;
+}
 
-  .FondoUs {
-    width: 100vw;
-    height: auto;
-    
-    
-  }
+.FondoUs {
+  width: 100%;
+  height: auto;
+
+
+}
+
+.negrita {
+  font-weight: bold;
+}
+
+.section {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+  gap: 0;
+  top:0;
+  bottom: 0;
+  justify-content: space-between;
+}

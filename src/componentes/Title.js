@@ -5,8 +5,6 @@ import '@fontsource-variable/playfair-display';
 
 export const Title = ({text}) => {
   return (
-    <div className="titleContainer">
-      <h1 className='title'>{text}</h1>
-    </div>
+    <h1 className='title'>{text}</h1>
   )
 }
