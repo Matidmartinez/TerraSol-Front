@@ -38,7 +38,7 @@ const App = () => {
             </ul>
           </nav>
         </header>
-        <main>
+        <main className='pagesContainer'>
           <Routes>
             <Route exact path="/" element={<Home />} />
             <Route path="/parcelas" element={<Parcels />} />
