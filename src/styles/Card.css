@@ -8,9 +8,9 @@
 .cardContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 20px; 
+    gap: 30px; 
     padding: 20px;
-    width: 80%;
+    width: 100%;
     box-sizing: border-box;
     align-content: center;
     justify-content: center;
@@ -19,8 +19,6 @@
 .box {
     display: flex;
     flex-direction: column;
-    max-width: 80%;
-    min-width: 80%;
     justify-content: center;
 
 }
@@ -30,14 +28,14 @@
 }
 
 .image {
-    width: 100%;
-    padding-top: 125%; 
-    position: relative;
+    min-width: 300px;
+    max-width: 300px;
+    height: 450px;
     overflow: hidden;
 }
 
 .image img {
-    position: absolute;
+    min-width: 300px;
     top: 0;
     left: 0;
     width: 100%;
@@ -104,7 +102,7 @@
 
 @media (max-width: 1200px) {
     .cardContainer {
-        grid-template-columns: repeat(3, 1fr); /* 2 columnas en pantallas más pequeñas */
+        grid-template-columns: 1fr; /* 2 columnas en pantallas más pequeñas */
     }
 }
 
