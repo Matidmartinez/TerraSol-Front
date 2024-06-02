@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { FAQCard } from '../componentes/FAQCard'
+import { Title } from '../componentes/Title'
 import '../styles/FAQ.css'
 
 export const FAQ = () => {
@@ -16,7 +17,7 @@ export const FAQ = () => {
 
     return (
         <main>
-            <h1>Preguntas frecuentes</h1>
+            <Title text="Preguntas frecuentes" />
             <section className='FAQSection'>
                 {
                     QAs.map((qa) => (
