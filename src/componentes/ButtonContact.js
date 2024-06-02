@@ -1,7 +1,7 @@
 import React from 'react';
 import { NavLink, Routes, Route } from 'react-router-dom';
-import './ButtonCoti.css'; 
-import Contact from './Contacto'; 
+import '../styles/ButtonCoti.css'
+import { Contact } from '../pages/Contact';
 
 export function CotizarButton() {
   return (
