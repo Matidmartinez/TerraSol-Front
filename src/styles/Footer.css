@@ -1,7 +1,7 @@
 .footer-logos {
     display: flex;
     justify-content: center;
-    margin: 10 30px;
+    gap: 20px
   }
   
   
