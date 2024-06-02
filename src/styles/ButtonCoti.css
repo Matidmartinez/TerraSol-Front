@@ -1,19 +1,23 @@
 .cotizar-button {
-    background-color: #000; 
-    padding: 10px 20px; 
-    border: none;
-    border-radius: 5px; 
-    font-size: 16px; 
-    cursor: pointer;
-    transition: background-color 0.3s ease; 
-  }
-  
-  .cotizar-button:hover {
-    background-color: #333; 
-  }
+  background-color: #000;
+  color: #fff;
+  padding: 15px 30px;
+  border: none;
+  border-radius: 5px;
+  font-family: Arial, sans-serif;
+  font-size: 18px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+  box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+  text-decoration: none;
+}
 
-  .cotizar-button.active {
-    
-    background-color: #939C20;
-    color: white;
-  }
+.cotizar-button:hover {
+  background-color: #333;
+}
+
+.cotizar-button.active {
+  background-color: #939C20;
+  color: white;
+}
