@@ -1,66 +1,88 @@
-import React from 'react';
-import './App.css'; //Importa el archivo CSS específico para el componente App.
-import 'bootstrap/dist/css/bootstrap.min.css';
-import Card from '../src/componentes/Card'
+import React, { useState } from 'react';
+import { BrowserRouter as Router, Routes, Route, NavLink } from 'react-router-dom';
+import './App.css';
+import { Home } from './pages/Home';
+import { Parcels } from './pages/Parcels';
+import { About } from './pages/About';
+import { FAQ } from './pages/FAQ';
+import { Contact } from './pages/Contact';
+import { Footer } from './componentes/Footer';
+import logo from './assets/logo.png';
+import { ReactComponent as HamburgerButton } from './assets/hamburger-button.svg';
 
-const App = () => { //Define el componente funcional App, que es el componente principal de la aplicación.
-  const parcelasID = [1,3,4]
+const App = () => {
+  const [menuOpen, setMenuOpen] = useState(false);
+
+  /**
+   * Cambia el estado de false a true y viceversa para mostrar u ocultar el menú lateral en dispositivos pequeños
+   */
+  const toggleMenu = () => {
+    setMenuOpen(!menuOpen);
+  };
+
   return (
-    <div className="container">
-      <header className="header">
-        <div className="logo">
-          <img src="https://i.imgur.com/6sT02j6.png" alt="Logo" />
-        </div>
-        <nav className="navigation">
+    <Router>
+      <div className="container">
+        <header className="header">
+          <div className="logo">
+            <img src={logo} alt="Logo" />
+          </div>
+          <HamburgerButton className='hamburger' onClick={toggleMenu}/>
+          {/* Nav para el menu de pantallas grandes*/}
+          <nav className="navigation">
+            <ul>
+              <li>
+                <NavLink exact to="/" activeClassName="active" className="nav-link">Inicio</NavLink>
+              </li>
+              <li>
+                <NavLink to="/parcelas" activeClassName="active" className="nav-link">Parcelas</NavLink>
+              </li>
+              <li>
+                <NavLink to="/nosotros" activeClassName="active" className="nav-link">Nosotros</NavLink>
+              </li>
+              <li>
+                <NavLink to="/preguntas-frecuentes" activeClassName="active" className="nav-link">Preguntas frecuentes</NavLink>
+              </li>
+              <li>
+                <NavLink to="/contacto" activeClassName="active" className="nav-link">Contáctenos</NavLink>
+              </li>
+            </ul>
+          </nav>
+        </header>
+
+        {/* Side menu para dispositivos de pantallas pequeñas */}
+        <div className={`overlay-menu ${menuOpen ? 'open' : ''}`} onClick={toggleMenu}></div>
+        <nav className={`side-menu ${menuOpen ? 'open' : ''}`}>
           <ul>
             <li>
-              <a href="/">Inicio</a>
+              <NavLink exact to="/" activeClassName="active" className="nav-link" onClick={toggleMenu}>Inicio</NavLink>
             </li>
             <li>
-              <a href="/parcelas">Parcelas</a>
+              <NavLink to="/parcelas" activeClassName="active" className="nav-link" onClick={toggleMenu}>Parcelas</NavLink>
             </li>
             <li>
-              <a href="/nosotros">Nosotros</a>
+              <NavLink to="/nosotros" activeClassName="active" className="nav-link" onClick={toggleMenu}>Nosotros</NavLink>
             </li>
             <li>
-              <a href="/preguntas-frecuentes">Preguntas frecuentes</a>
+              <NavLink to="/preguntas-frecuentes" activeClassName="active" className="nav-link" onClick={toggleMenu}>Preguntas frecuentes</NavLink>
             </li>
             <li>
-              <a href="/contacto">Contáctenos</a>
+              <NavLink to="/contacto" activeClassName="active" className="nav-link" onClick={toggleMenu}>Contáctenos</NavLink>
             </li>
           </ul>
         </nav>
-      </header>
-      <section className="hero">
-        <img src="https://i.imgur.com/w67fQ4Y.jpg" alt="Hero" />
-        <div className="hero-content">
-          <h1>Conoce la parcela de tus sueños</h1>
-          <p>Cotzar</p>
-          <button>CONOCE NUESTRAS NUEVAS PARCELAS</button>
-        </div>
-      </section>
-      <section className="features">
-        <div className="feature">
-          <h2>REGIÓN PUERTO VARAS</h2>
-          <p>PUERTO VARAS, REGION DE LOS LAGOS</p>
-        </div>
-        <div className="feature">
-          <h2>REGIÓN DE LOS LAGOS</h2>
-          <p>PUERTO VARAS, REGION DE LOS LAGOS</p>
-        </div>
-      </section>
-      <section className="testimonials">
-        <h2>RESEÑAS</h2>
-        <div className="testimonial">
-          <p>Aaron Valenzuela</p>
-          <p>lasblaslabslasblbaslb
-            asbaslbalsblasblabsls
-            lbalsblasblabsls</p>
-          <p>lbalsblasblabsls</p>
-        </div>
-      </section>
-      <Card/>
-    </div>
+        <main className='pagesContainer'>
+          <Routes>
+            <Route exact path="/" element={<Home />} />
+            <Route path="/parcelas" element={<Parcels />} />
+            <Route path="/nosotros" element={<About />} />
+            <Route path="/preguntas-frecuentes" element={<FAQ />} />
+            <Route path="/contacto" element={<Contact />} />
+          </Routes>
+        </main>
+        <Footer />
+      </div>
+    </Router>
   );
 };
 

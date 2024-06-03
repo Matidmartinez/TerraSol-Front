@@ -1,0 +1,17 @@
+
+
+main { 
+    width: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+
+.FAQSection { 
+    max-width: 1136px;
+    max-height: fit-content;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 8px;
+}

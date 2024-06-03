@@ -1,0 +1,19 @@
+.HeaderSection {
+    background-image: url('../assets/fondo-home.jpg');
+    background-repeat: round;
+    background-attachment: fixed;
+    background-size: auto;
+    height: 20em;
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+}
+
+.titulo-header{
+    color: #ffff;
+    font-size: 40px;
+    text-shadow: 2px 2px 4px rgba(0,0,0, 0.5);   
+    margin-bottom: 20px;
+}
