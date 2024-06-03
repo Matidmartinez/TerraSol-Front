@@ -4,17 +4,14 @@ import '../styles/ButtonCoti.css'
 import { Parcels } from '../pages/Parcels';
 
 export function ParcelsButton() {
-    return (
-        <>
-         <NavLink to="/contacto" className={({ isActive }) => isActive ? "parcels-button active" : "parcels-button"}>
-            Ver Parcelas
-        </NavLink>
-        <div>
-            
-        <Routes>
-            <Route path="/parcelas" element={<Parcels />} />
-        </Routes>
-        </div>
-        </>
-    );
+  return (
+    <>
+      <NavLink to="/contacto" className={({ isActive }) => isActive ? "parcels-button active" : "parcels-button"}>
+        Ver Parcelas
+      </NavLink>
+      <Routes>
+          <Route path="/parcelas" element={<Parcels />} />
+      </Routes>
+    </>
+  );
 }
