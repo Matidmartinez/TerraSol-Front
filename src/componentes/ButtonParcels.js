@@ -11,7 +11,7 @@ export function ParcelsButton({ isMain }) {
         to={isMain ? "/parcelas" : "/contacto"} 
         className="parcels-button"
       >
-        Ver Parcelas
+        {isMain ? "Ver Parcelas" : "Cotizar Parcela"} 
       </NavLink>
       <Routes>
         <Route path="/parcelas" element={<Parcels />} />
