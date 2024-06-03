@@ -20,6 +20,7 @@ export const About = () => {
           de la región con un servicio excepcional</span>. Nos dedicamos a crear comunidades sostenibles y armoniosas,
           donde nuestros clientes puedan construir sus sueños y disfrutar de un entorno natural prístino.</p>
         <br></br>
+
         <p>Valoramos la conservación del medio ambiente y el desarrollo responsable, asegurando que cada parcela no
           solo sea una inversión en tierra, sino también en calidad de vida. Nos comprometemos a<span className='negrita'> brindar asesoramiento
             personalizado</span> y soluciones integrales que satisfagan las necesidades y aspiraciones de nuestros clientes,
