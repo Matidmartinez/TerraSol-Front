@@ -40,6 +40,8 @@ export const Home = () => {
                 titulo={card.nombre_parcela}
                 region={card.region_parcela}
                 descripcion={card.descripcion_parcela}
+                metros = {card.metros_2}
+                precio = {card.precios_desde}
                 imagen={card.img_1}
               />
             ))
