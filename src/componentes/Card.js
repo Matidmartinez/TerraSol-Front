@@ -3,7 +3,7 @@ import { ReactComponent as M2Icon } from '../assets/m2-card-icon.svg';
 import { ReactComponent as PriceIcon } from '../assets/price-card-icon.svg';
 import { ParcelsButton } from './ButtonParcels';
 
-export function Card({ id, titulo, region, descripcion, imagen, metros, precio }) {
+export function Card({ id, titulo, region, descripcion, imagen, metros, precio, isMain }) {
     const formattedPrecio = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'CLP' }).format(precio);
     return (
         <div key={id} className='box'>
@@ -24,7 +24,7 @@ export function Card({ id, titulo, region, descripcion, imagen, metros, precio }
                             <p className='info-item'><PriceIcon className='precio-icon'/> Precios desde {(formattedPrecio)}</p>
                         </div>
                         <div className='button-container'> 
-                            <ParcelsButton />
+                            <ParcelsButton isMain={isMain} />
                         </div>
                     </div>
                 </div>

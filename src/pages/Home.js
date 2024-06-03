@@ -46,6 +46,7 @@ export const Home = () => {
                   metros={card.metros_2}
                   precio={card.precios_desde}
                   imagen={card.img_1}
+                  isMain={true}
                 />
               ))]
             }

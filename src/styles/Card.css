@@ -124,11 +124,12 @@
 }
 
 .additional-info {
-    margin-top: 40px;
+    margin-top: 12px;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    gap: 28px;
 }
 
 .info-item { 
