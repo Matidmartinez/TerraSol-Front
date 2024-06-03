@@ -1,14 +1,23 @@
-.NewParcel{
+.NewParcel {
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-content: center;
 }
 
+.AllParcels {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-content: center;
+
+}
+
+
 .cardContainer {
     display: grid;
     grid-template-columns: repeat(3, 1fr);
-    gap: 30px; 
+    gap: 30px;
     padding: 20px;
     width: 100%;
     box-sizing: border-box;
@@ -41,7 +50,7 @@
     max-width: 300px;
     height: 450px;
     overflow: hidden;
-    
+
 }
 
 .image img {
@@ -82,7 +91,7 @@
     top: 0;
     left: 0;
     min-width: 300px;
-    max-width: 300px;   
+    max-width: 300px;
     height: 450px;
     background: #000000;
     display: flex;
@@ -97,7 +106,7 @@
     z-index: 15;
 }
 
-.overlay h1 p{
+.overlay h1 p {
     margin-bottom: 10px;
     text-align: justify;
 }
@@ -116,12 +125,29 @@
 
 @media (max-width: 1200px) {
     .cardContainer {
-        grid-template-columns: 1fr; /* 2 columnas en pantallas más pequeñas */
+        grid-template-columns: 1fr;
     }
 }
 
 @media (max-width: 768px) {
     .cardContainer {
-        grid-template-columns: 1fr; /* 1 columna en pantallas muy pequeñas */
+        grid-template-columns: 1fr;
     }
+}
+
+.additional-info{
+    margin-top: 40px;
+    display: flex;
+    justify-content: end;
+    align-items: end;
+}
+
+.m2-icon{
+    fill: #939c20;
+    width: 30px;
+}
+
+.precio-icon{
+    fill: #939c20;
+    width: 30px;
 }
