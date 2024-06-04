@@ -16,9 +16,9 @@ export function Card({ id, titulo, region, descripcion, imagen, metros, precio, 
                     </div>
                 </div>
                 <div className='overlay'>
-                    <h1>{titulo}</h1>
-                    <p>{descripcion}</p>
                     <div className='additional-info'>
+                        <h1>{titulo}</h1>
+                        <p>{descripcion}</p>
                         <div className='info-data'> 
                             <p className='info-item'><M2Icon className='m2-icon'/> {metros} metros cuadrados</p>
                             <p className='info-item'><PriceIcon className='precio-icon'/> Precios desde {(formattedPrecio)}</p>
