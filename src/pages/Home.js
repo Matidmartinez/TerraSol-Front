@@ -37,7 +37,7 @@ export const Home = () => {
           />
           <div className='cardContainer'>
             {
-              [cards.slice(0, 3).map((card) => (
+              [cards.slice(3, 7).map((card) => (
                 <Card
                   id={card.id_parcela}
                   titulo={card.nombre_parcela}
