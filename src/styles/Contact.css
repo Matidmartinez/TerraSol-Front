@@ -4,6 +4,7 @@
   flex-direction: column;
   gap: 0;
   justify-content: center;
+  flex-wrap: wrap;
   align-items: center;
   text-align: center;
   padding: 20px;
@@ -12,7 +13,8 @@
 .contact-tittle p {
   font-size: 20px;
   max-width: 800px;
-  margin: 0 auto 20px;
+  margin: 4px 20px;
+  text-wrap: wrap;
 }
 
 .contact-escribenos {
@@ -45,7 +47,7 @@
 .escribenos-imagen img {
   max-width: 100%;
   height: auto;
-  border-radius: 15px;
+  border-radius: 8px;
 }
 
 .escribenos-formulario {
@@ -59,8 +61,8 @@
 .Formulario {
   display: flex;
   flex-direction: column;
-  background-color: #343434;
-  border-radius: 15px;
+  background-color: #000;
+  border-radius: 8px;
   box-shadow: 0 0 15px rgba(0, 0, 0, 0.2);
   padding: 20px;
   width: 100%;
@@ -104,16 +106,17 @@ fieldset {
 }
 
 button {
-  background-color: #5cb85c;
+  background-color: #939C20;
   color: white;
-  border: none;
-  padding: 10px;
-  border-radius: 5px;
+  text-decoration: none;
+  padding: 12px 20px;
+  border-radius: 12px;
+  border: 1px solid white;
   cursor: pointer;
 }
 
 button:hover {
-  background-color: #4cae4c;
+  background-color: #aeb81c;
 }
 
  /* Dispositivos Medianos*/
