@@ -1,6 +1,7 @@
 # Terrasol Front
 
 Este proyecto corresponde a la evaluación 3 de la asignatura de Frontend del instituto San Sebastian. El cual fue realizado de manera colaborativa por tres estudiantes. 
+<img width="2026" alt="Terrasol " src="https://github.com/Matidmartinez/TerraSol-Front/assets/69016178/1f863568-5749-468b-9fcd-5b63e2e46563">
 
 ## Requisitos Previos
 
