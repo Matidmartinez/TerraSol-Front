@@ -1,26 +1,32 @@
-.footer-logos {
-  display: flex;
-  justify-content: center;
-  gap: 20px;
-}
-
 .footer {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
   background-color: #000;
   color: #fff;
   text-align: center;
-  bottom: 0;
   padding: 5px 0;
   margin-top: 30px;
+  gap: 8px;
 }
 
 .footer-logo img {
   max-width: 100px;
   margin-bottom: 10px;
+  padding-top: 40px;
 }
 
-.footer-address,
-.footer-contact {
+.footer-address {
   margin: 5px 0;
+}
+
+.footer-contact { 
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  align-items: top;
+  gap: 4px;
 }
 
 .footer-contact .whatsapp-icon {
@@ -29,5 +35,18 @@
   width: 20px;
   height: 20px;
   margin-right: 5px;
+}
+
+.footer-logos {
+  display: flex;
+  flex-direction: row-reverse;
+  justify-content: center;
+  align-items: center;
+  gap: 16px;
+  padding-bottom: 40px;
+}
+
+hr { 
+  min-width: 350px;
 }
 

@@ -2,6 +2,7 @@ import React from 'react';
 import logo from '../assets/logo.png';
 import logofb from '../assets/Facebook icon.png';
 import logoig from '../assets/Instagram icon.png';
+import { ReactComponent as WhatsApp} from '../assets/whatsApp.svg'
 import '../styles/Footer.css';
 
 export const Footer = () => {
@@ -15,9 +16,11 @@ export const Footer = () => {
       </div>
       <div className="footer-contact">
         <a href="https://wa.me/56950186583" target="_blank" rel="noopener noreferrer">
-          <i className="fab fa-whatsapp"></i> +56 9 50186583 
+          <WhatsApp />
         </a>
+        <p className="fab fa-whatsapp">+56950186583</p>
       </div>
+      <hr></hr>
       <div className="footer-logos">
         <a 
           href="https://www.facebook.com/tuparcelaenelsurdechile?mibextid=ZbWKwL" 
