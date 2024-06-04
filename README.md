@@ -3,6 +3,8 @@
 Este proyecto corresponde a la evaluación 3 de la asignatura de Frontend del instituto San Sebastian. El cual fue realizado de manera colaborativa por tres estudiantes. 
 <img width="2026" alt="Terrasol " src="https://github.com/Matidmartinez/TerraSol-Front/assets/69016178/1f863568-5749-468b-9fcd-5b63e2e46563">
 
+### Diseño en [Figma](https://www.figma.com/design/uAUouYL2fUYMcUhqhFUjpx/Terrasol-parcelas?node-id=81-8&t=4PYACKC5l42CdJbg-1)
+
 ## Requisitos Previos
 
 Asegúrate de primero clonar y ejecutar el [backend](https://github.com/yeikobu/terrasol-backend) de este proyecto.
