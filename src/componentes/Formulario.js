@@ -1,7 +1,9 @@
-import React, { useState } from 'react';
+import React, { useState, useContext } from 'react';
 import '../styles/Contact.css';
+import { ParcelContext } from '../contexts/ParcelContext';
 
 export function Formulario() {
+    const { parcelName } = useContext(ParcelContext);
 
     const [firstName, setFirstName] = useState("");
     const [lastName, setLastName] = useState("");
@@ -128,6 +130,7 @@ export function Formulario() {
                             setMessage(e.target.value)
                         }
                         placeholder="Escriba su mensaje"
+                        value={parcelName !== "" ? `Hola. Me gustaría cotizar una parcela en ${parcelName}` : ''} 
                         required
                     ></textarea>
                     <button

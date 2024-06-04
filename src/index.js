@@ -3,9 +3,14 @@ import ReactDOM from 'react-dom'; //Importa ReactDOM, que es una biblioteca espe
 import './index.css'; // Importa el archivo CSS para aplicar estilos globales.
 import App from './App'; // Importa el componente principal de la aplicación, que se define en App.js.
 
+import { BrowserRouter as Router } from 'react-router-dom';
+import { ParcelProvider } from './contexts/ParcelContext';
+
 ReactDOM.render( //Método de ReactDOM que renderiza el componente especificado (<App />) dentro del elemento del DOM con el id root
-  <React.StrictMode> 
-    <App />
+  <React.StrictMode>
+     <ParcelProvider>
+        <App />
+      </ParcelProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

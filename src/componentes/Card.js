@@ -24,7 +24,7 @@ export function Card({ id, titulo, region, descripcion, imagen, metros, precio, 
                             <p className='info-item'><PriceIcon className='precio-icon'/> Precios desde {(formattedPrecio)}</p>
                         </div>
                         <div className='button-container'> 
-                            <ParcelsButton isMain={isMain} />
+                            <ParcelsButton isMain={isMain} parcelName={titulo} />
                         </div>
                     </div>
                 </div>

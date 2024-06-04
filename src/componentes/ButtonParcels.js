@@ -1,22 +1,27 @@
-import React from 'react';
-import { NavLink, Routes, Route } from 'react-router-dom';
-import '../styles/ButtonParcels.css'
-import { Parcels } from '../pages/Parcels';
-import { Contact } from '../pages/Contact';
+import React, { useContext } from 'react';
+import { useNavigate } from 'react-router-dom';
+import '../styles/ButtonParcels.css';
+import { ParcelContext } from '../contexts/ParcelContext';
 
-export function ParcelsButton({ isMain }) {
+export function ParcelsButton({ isMain, parcelName }) {
+  const { setParcelName } = useContext(ParcelContext);
+  const navigate = useNavigate();
+
+  /**
+   * Asigna el nombre de la parcela a la variable global solo si el usuario se encuentra en /parcelas. 
+   * Dependiendo de si el botón se encuentra en main(home) o no, redirige a /parcelas o a /contaco
+   */
+  const handleClick = () => {
+    if (!isMain) { 
+      setParcelName(parcelName);
+    }
+
+    navigate(isMain ? "/parcelas" : "/contacto");
+  };
+
   return (
-    <>
-      <NavLink 
-        to={isMain ? "/parcelas" : "/contacto"} 
-        className="parcels-button"
-      >
-        {isMain ? "Ver Parcelas" : "Cotizar Parcela"} 
-      </NavLink>
-      <Routes>
-        <Route path="/parcelas" element={<Parcels />} />
-        <Route path="/contacto" element={<Contact />} /> {/* Asegúrate de tener esta ruta */}
-      </Routes>
-    </>
+    <button onClick={handleClick} className="parcels-button">
+       {isMain ? "Ver Parcelas" : "Cotizar Parcela"} 
+    </button>
   );
 }

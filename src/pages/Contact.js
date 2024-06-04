@@ -16,7 +16,7 @@ export const Contact = () => {
       </section>
       <section className='contact-escribenos'>
         <div className='escribenos-imagen'>
-          <img src={casitaFormulario}></img>
+          <img src={casitaFormulario} alt='Imagne referencial de una parcela. La cual muestra una cabaña'></img>
         </div>
         <div className='escribenos-formulario'>
         <Formulario />
