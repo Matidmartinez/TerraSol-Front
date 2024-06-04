@@ -1,9 +1,9 @@
 .cotizar-button {
   background-color: #000;
   color: #fff;
-  padding: 15px 30px;
-  border: none;
-  border-radius: 5px;
+  padding: 12px 40px;
+  border: 1px solid white;
+  border-radius: 12px;
   font-family: Arial, sans-serif;
   font-size: 18px;
   font-weight: bold;
