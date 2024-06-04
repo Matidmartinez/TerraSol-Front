@@ -123,6 +123,36 @@
     opacity: 1;
 }
 
+.additional-info {
+    margin-top: 12px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 28px;
+}
+
+.info-item { 
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.m2-icon{
+    fill: #939c20;
+    size: 30px;
+}
+
+.precio-icon {
+    fill: #939c20;
+    width: 30px;
+}
+
+.info-data { 
+    display: flex;
+}
+
 @media (max-width: 1200px) {
     .cardContainer {
         grid-template-columns: 1fr;
@@ -133,21 +163,4 @@
     .cardContainer {
         grid-template-columns: 1fr;
     }
-}
-
-.additional-info{
-    margin-top: 40px;
-    display: flex;
-    justify-content: end;
-    align-items: end;
-}
-
-.m2-icon{
-    fill: #939c20;
-    width: 30px;
-}
-
-.precio-icon{
-    fill: #939c20;
-    width: 30px;
 }

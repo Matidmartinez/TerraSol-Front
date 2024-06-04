@@ -3,11 +3,6 @@ import { Card } from '../componentes/Card';
 import { Title } from '../componentes/Title';
 import '../styles/Card.css'
 
-//Llamando a la API y guardando los datos en u arreglo, los 3 primeros.
-let cards = [];
-
-
-
 export const Parcels = () => {
   const [cards, setCards] = useState([]);
 
@@ -40,6 +35,7 @@ export const Parcels = () => {
                 metros={card.metros_2}
                 precio={card.precios_desde}
                 imagen={card.img_1}
+                isMain={false}
               />
             ))
           }

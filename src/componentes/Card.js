@@ -1,8 +1,9 @@
 import React from 'react';
 import { ReactComponent as M2Icon } from '../assets/m2-card-icon.svg';
 import { ReactComponent as PriceIcon } from '../assets/price-card-icon.svg';
+import { ParcelsButton } from './ButtonParcels';
 
-export function Card({ id, titulo, region, descripcion, imagen, metros, precio }) {
+export function Card({ id, titulo, region, descripcion, imagen, metros, precio, isMain }) {
     const formattedPrecio = new Intl.NumberFormat('es-ES', { style: 'currency', currency: 'CLP' }).format(precio);
     return (
         <div key={id} className='box'>
@@ -18,9 +19,13 @@ export function Card({ id, titulo, region, descripcion, imagen, metros, precio }
                     <h1>{titulo}</h1>
                     <p>{descripcion}</p>
                     <div className='additional-info'>
-                        
-                        <p><M2Icon className='m2-icon'/> {metros} metros cuadrados</p>
-                        <p><PriceIcon className='precio-icon'/> Precios desde {(formattedPrecio)}</p>
+                        <div className='info-data'> 
+                            <p className='info-item'><M2Icon className='m2-icon'/> {metros} metros cuadrados</p>
+                            <p className='info-item'><PriceIcon className='precio-icon'/> Precios desde {(formattedPrecio)}</p>
+                        </div>
+                        <div className='button-container'> 
+                            <ParcelsButton isMain={isMain} parcelName={titulo} />
+                        </div>
                     </div>
                 </div>
             </div>
