@@ -83,7 +83,7 @@
 
 .description h1,
 .description h3 {
-    margin: 5px 0;
+    margin: 16px 0;
 }
 
 .overlay {
@@ -108,12 +108,13 @@
     height: 0;
     opacity: 0;
     overflow: hidden;
+    padding: 8px;
     transition: height 0.3s ease-in-out, opacity 0.3s ease-in-out;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
-    gap: 28px;
+    gap: 12px;
 }
 
 .card:hover .additional-info { 
@@ -132,20 +133,13 @@
     opacity: 0;
 }
 
-.additional-info {
-    margin-top: 12px;
-    display: flex;
-    flex-direction: column;
-    justify-content: center;
-    align-items: center;
-    gap: 28px;
-}
 
 .info-item { 
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
+    font-size: 12px;
 }
 
 .m2-icon{
@@ -155,7 +149,7 @@
 
 .precio-icon {
     fill: #939c20;
-    width: 30px;
+    width: 28px;
 }
 
 .info-data { 
